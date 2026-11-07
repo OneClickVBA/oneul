@@ -1,0 +1,74 @@
+/* Goals-only selectors; all theme colors come from style.css. */
+.goals-screen { max-width: 1180px; margin-inline: auto; }
+.goals-screen .g-brand { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.goals-screen .g-brand .wordmark { margin-right: auto; }
+.goals-screen .g-tabs { display: flex; gap: 6px; }
+.goals-screen .g-heading { margin: 28px 0 24px; }
+.goals-screen .g-heading h1 { font-size: clamp(25px, 3.5vw, 36px); line-height: 1.3; letter-spacing: -.04em; margin-bottom: 10px; }
+.goals-screen .g-layout { display: grid; grid-template-columns: minmax(230px, 300px) minmax(0, 1fr); align-items: start; gap: 24px; }
+.goals-screen .g-sidebar { display: flex; flex-direction: column; gap: 18px; min-width: 0; position: sticky; top: 20px; }
+.goals-screen .g-goal-list { display: flex; flex-direction: column; gap: 10px; }
+.goals-screen .g-goal-choice { text-align: left; display: flex; flex-direction: column; align-items: start; gap: 8px; border: 1px solid var(--line); background: var(--card); border-radius: 16px; padding: 15px; min-height: 44px; width: 100%; overflow-wrap: anywhere; }
+.goals-screen .g-goal-choice:hover { background: var(--bg); }
+.goals-screen .g-goal-choice[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+.goals-screen .g-goal-choice strong { font-size: 16px; font-weight: 650; white-space: pre-wrap; }
+.goals-screen .g-status { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 20px; padding: 3px 10px; color: var(--secondary); background: var(--bg); font-size: 12px; font-weight: 650; }
+.goals-screen .g-status-active { color: var(--accent-ink); background: var(--accent-soft); border-color: var(--accent); }
+.goals-screen .g-status-done { color: var(--accent-ink); }
+.goals-screen .g-status-paused { border-style: dashed; }
+.goals-screen .g-detail, .goals-screen .g-milestones { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.goals-screen .g-overview { border-top: 4px solid var(--accent); padding: 24px; overflow-wrap: anywhere; }
+.goals-screen .g-overview h2 { margin: 12px 0; letter-spacing: -.025em; white-space: pre-wrap; }
+.goals-screen .g-why { color: var(--secondary); white-space: pre-wrap; }
+.goals-screen .g-progress { border-top: 1px solid var(--line); padding-top: 14px; font-weight: 650; color: var(--accent-ink); font-variant-numeric: tabular-nums; }
+.goals-screen .g-section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+.goals-screen .g-milestone { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.goals-screen .g-milestone-tools { display: flex; align-items: center; gap: 6px; }
+.goals-screen .g-milestone-tools .g-delete { margin-left: auto; }
+.goals-screen .g-move, .goals-screen .g-add { width: 44px; min-width: 44px; height: 44px; padding: 0; font-size: 20px; }
+.goals-screen .g-delete { color: var(--secondary); font-size: 12px; min-height: 44px; user-select: none; touch-action: none; }
+.goals-screen .g-delete.g-holding { background: var(--accent-soft); border-color: var(--accent); }
+.goals-screen .g-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; margin: 0; }
+.goals-screen .g-field-label { color: var(--secondary); font-size: 13px; }
+.goals-screen .field { width: 100%; min-width: 0; min-height: 44px; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; color: var(--text); }
+.goals-screen textarea.field { resize: vertical; }
+.goals-screen .field::placeholder { color: var(--sub); }
+.goals-screen .g-composer { display: flex; align-items: end; gap: 8px; min-width: 0; margin: 0; }
+.goals-screen .g-composer .g-field { flex: 1; }
+.goals-screen .g-task-list, .goals-screen .g-dropped-list { display: flex; flex-direction: column; gap: 12px; }
+.goals-screen .g-task { border-top: 1px solid var(--line); padding-top: 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.goals-screen .g-task-top { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.goals-screen .g-task-top > .g-delete { margin-left: auto; }
+.goals-screen .g-task-top > .btn { font-size: 12px; padding-inline: 12px; }
+.goals-screen .g-check { display: inline-flex; align-items: center; min-height: 44px; gap: 8px; cursor: pointer; }
+.goals-screen .g-check input { width: 22px; height: 22px; accent-color: var(--accent); margin: 0; }
+.goals-screen .g-task-meta { display: grid; grid-template-columns: minmax(96px, .35fr) minmax(0, 1fr); gap: 10px; }
+.goals-screen .g-task-done > .g-field input { color: var(--secondary); text-decoration: line-through; }
+.goals-screen .g-drop-editor { padding: 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 14px; }
+.goals-screen .g-drop-actions { display: flex; justify-content: end; gap: 8px; margin-top: 10px; }
+.goals-screen .g-dropped { border-top: 1px dashed var(--line); padding-top: 10px; }
+.goals-screen .g-dropped summary { min-height: 44px; padding-block: 10px; cursor: pointer; color: var(--secondary); font-size: 14px; }
+.goals-screen .g-dropped .field:disabled { opacity: 1; color: var(--secondary); }
+.goals-screen .g-drop-reason { white-space: pre-wrap; overflow-wrap: anywhere; color: var(--secondary); font-size: 13px; border-left: 3px solid var(--accent); padding-left: 12px; }
+.goals-screen .g-empty { text-align: center; padding: 48px 24px; }
+.goals-screen .g-empty h2 { font-size: 22px; }
+.goals-screen .g-settings-note, .goals-screen .g-feedback { margin: 0; }
+.goals-screen .g-help { margin-top: 24px; }
+.goals-screen .g-feedback:empty { display: none; }
+@media (max-width: 767px) {
+  .goals-screen .g-brand { gap: 8px; flex-wrap: nowrap; }
+  .goals-screen .g-brand .wordmark { white-space: nowrap; }
+  .goals-screen .g-brand .btn { padding-inline: 12px; }
+  .goals-screen .g-heading { margin-block: 22px; }
+  .goals-screen .g-layout { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .goals-screen .g-sidebar { position: static; padding: 18px; }
+  .goals-screen .g-goal-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .goals-screen .g-goal-choice { padding: 12px; }
+  .goals-screen .g-overview, .goals-screen .g-milestone { padding: 18px; }
+  .goals-screen .g-task-meta { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 359px) {
+  .goals-screen .g-brand { flex-wrap: wrap; }
+  .goals-screen .g-goal-list { grid-template-columns: minmax(0, 1fr); }
+  .goals-screen .g-task-top > .muted { flex-basis: 55%; }
+}

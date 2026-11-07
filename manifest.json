@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "오늘 · oneul",
+  "short_name": "오늘",
+  "description": "목표를 작은 걸음으로. 마일스톤과 할 일을 기기 안에서 관리하는 나의 하루.",
+  "lang": "ko-KR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F6F2",
+  "theme_color": "#F3F6F2",
+  "icons": [
+    {"src":"./icons/app-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"./icons/app-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"./icons/app-maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+  ]
+}
